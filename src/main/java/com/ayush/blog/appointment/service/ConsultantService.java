@@ -14,7 +14,10 @@ public class ConsultantService {
     private ConsultantRepo consultantRepo;
 
     // Return Optional<Consultant> to use orElseThrow later
-    public Optional<Consultant> findById(Long consultantId) {return consultantRepo.findById(consultantId);}
+    public Consultant getConsultantById(Long id) {
+        return consultantRepo.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Consultant with ID " + id + " not found"));
+    }
     public List<Consultant> getAllConsultants() {
         return consultantRepo.findAll();
     }

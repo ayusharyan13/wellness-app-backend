@@ -1,11 +1,17 @@
 package com.ayush.blog.appointment.DTO;
 
 import com.ayush.blog.appointment.entity.Appointment;
+import jakarta.persistence.Access;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
+@Data
+@NoArgsConstructor
+@Setter
+@Getter
 public class AppointmentDTO {
-
+    // Getters and Setters
     private Long id;
     private LocalDateTime slotStartTime;
     private LocalDateTime slotEndTime;
@@ -30,41 +36,20 @@ public class AppointmentDTO {
         this.status = appointment.getStatus();
     }
 
-    // Getters and Setters
-    public Long getId() {
-        return id;
-    }
-
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public LocalDateTime getSlotStartTime() {
-        return slotStartTime;
     }
 
     public void setSlotStartTime(LocalDateTime slotStartTime) {
         this.slotStartTime = slotStartTime;
     }
 
-    public LocalDateTime getSlotEndTime() {
-        return slotEndTime;
-    }
-
     public void setSlotEndTime(LocalDateTime slotEndTime) {
         this.slotEndTime = slotEndTime;
     }
 
-    public String getServiceType() {
-        return serviceType;
-    }
-
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;
-    }
-
-    public String getStatus() {
-        return status;
     }
 
     public void setStatus(String status) {

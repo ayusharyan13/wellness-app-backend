@@ -1,96 +1,50 @@
 package com.ayush.blog.appointment.entity;
 import com.ayush.blog.entity.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Entity
-@Table(name = "slots",  uniqueConstraints = @UniqueConstraint(columnNames = "startTime"))
-public class Slot implements Serializable {
-
+public class Slot {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private LocalDateTime startTime; // Slot start time
-    private LocalDateTime endTime;   // Slot end time
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "consultant1_id")
+    private Consultant consultant1;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "consultant2_id")
+    private Consultant consultant2;
+
+    private LocalDate date;
 
     @ManyToMany
     @JoinTable(
-            name = "slot_consultant",
+            name = "user_slot",
             joinColumns = @JoinColumn(name = "slot_id"),
-            inverseJoinColumns = @JoinColumn(name = "consultant_id")
+            inverseJoinColumns = @JoinColumn(name = "user_id")
     )
-    private List<Consultant> availableConsultants = new ArrayList<>();
-
-    @ManyToMany(mappedBy = "bookedSlots")
     private List<User> bookedUsers = new ArrayList<>();
 
-    private boolean isFullyBooked = false;
-    private boolean isBooked = false;  // Add this field for tracking the booking status
+    private boolean fullyBooked = false;
 
-    // Custom constructor to initialize specific fields
-    public Slot(LocalDateTime startTime, boolean isFullyBooked) {
+    // Getters and setters
+    public Slot(LocalDateTime startTime, LocalDateTime endTime, Consultant consultant1, Consultant consultant2) {
         this.startTime = startTime;
-        this.isFullyBooked = isFullyBooked;
-        this.isBooked = false;  // You can default to false if the slot is not yet booked
-    }
-
-    // Explicit getter and setter for isBooked
-    public boolean isBooked() {
-        return isBooked;
-    }
-
-    public void setBooked(boolean isBooked) {
-        this.isBooked = isBooked;
-    }
-
-    // Explicit getter and setter for isFullyBooked
-    public boolean isFullyBooked() {
-        return isFullyBooked;
-    }
-
-    public void setFullyBooked(boolean isFullyBooked) {
-        this.isFullyBooked = isFullyBooked;
+        this.endTime = endTime;
+        this.consultant1 = consultant1;
+        this.consultant2 = consultant2;
     }
 }
-
-
-
-//@Data
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@Entity
-//@Table(name = "slots")
-//public class Slot implements Serializable {
-//
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
-//
-//    private LocalDateTime startTime; // Slot start time
-//    private LocalDateTime endTime;   // Slot end time
-//
-//    @ManyToMany
-//    @JoinTable(
-//            name = "slot_consultant",
-//            joinColumns = @JoinColumn(name = "slot_id"),
-//            inverseJoinColumns = @JoinColumn(name = "consultant_id")
-//    )
-//    private List<Consultant> availableConsultants = new ArrayList<>(); // List of consultants available for this slot
-//
-//    @ManyToMany(mappedBy = "bookedSlots") // Corrected to map by bookedSlots in User
-//    private List<User> bookedUsers = new ArrayList<>(); // Track which users have booked this slot
-//
-//    private boolean isFullyBooked = false; // Flag to track if the slot is fully booked
-//}

@@ -21,22 +21,17 @@ public class RedisService {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
-    @Autowired
-    private SlotService slotService;
-    @Autowired
-    private SlotRepo slotRepo;
-
     public void saveSlotsForDay(String date, List<String> availableSlots) {
-        redisTemplate.opsForSet().remove(date); // Delete existing slots for the day before saving
+        redisTemplate.opsForSet().remove(date); // Clear previous slots
         redisTemplate.opsForSet().add(date, availableSlots.toArray(new String[0]));
-        redisTemplate.expire(date, 7, TimeUnit.DAYS); // Expire keys in 7 days
+        redisTemplate.expire(date, 7, TimeUnit.DAYS); // Set expiry
     }
 
     public Set<String> getAvailableSlots(String date) {
-        return redisTemplate.opsForSet().members(date); // Fetch available slots for the day
+        return redisTemplate.opsForSet().members(date); // Return available slots
     }
 
     public void bookSlot(String date, String slot) {
-        redisTemplate.opsForSet().remove(date, slot); // Remove the booked slot
+        redisTemplate.opsForSet().remove(date, slot); // Remove booked slot from Redis
     }
 }

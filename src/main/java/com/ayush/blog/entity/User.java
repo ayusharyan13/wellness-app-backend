@@ -40,11 +40,8 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
     private Set<Appointment> appointments = new HashSet<>();
-    @ManyToMany
-    @JoinTable(
-            name = "user_slot",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "slot_id")
-    )
+
+    // A user can book many slots
+    @ManyToMany(mappedBy = "bookedUsers")
     private List<Slot> bookedSlots = new ArrayList<>();
 }

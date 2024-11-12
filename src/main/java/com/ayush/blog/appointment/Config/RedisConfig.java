@@ -6,13 +6,11 @@ import org.springframework.data.redis.connection.RedisPassword;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
-import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 public class RedisConfig {
-
     @Bean
     public JedisConnectionFactory jedisConnectionFactory() {
         JedisClientConfiguration clientConfig = JedisClientConfiguration.builder()
@@ -28,11 +26,10 @@ public class RedisConfig {
 
         return new JedisConnectionFactory(redisStandaloneConfig, clientConfig);
     }
-
     @Bean
-    public RedisTemplate<String, Object> redisTemplate(JedisConnectionFactory jedisConnectionFactory) {
-        RedisTemplate<String, Object> template = new RedisTemplate<>();
-        template.setConnectionFactory(jedisConnectionFactory);
+    public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
+        RedisTemplate<String, String> template = new RedisTemplate<>();
+        template.setConnectionFactory(factory);
         template.setKeySerializer(new StringRedisSerializer());
         template.setValueSerializer(new StringRedisSerializer());
         return template;

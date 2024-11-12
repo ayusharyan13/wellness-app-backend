@@ -3,13 +3,12 @@ import com.ayush.blog.appointment.DTO.AppointmentDTO;
 import com.ayush.blog.appointment.DTO.AppointmentRequest;
 import com.ayush.blog.appointment.Notification.NotificationProducer;
 import com.ayush.blog.appointment.entity.Appointment;
-import com.ayush.blog.appointment.entity.Consultant;
-import com.ayush.blog.appointment.entity.Slot;
+import com.ayush.blog.appointment.repository.AppointmentRepo;
 import com.ayush.blog.appointment.repository.SlotRepo;
 import com.ayush.blog.appointment.service.AppointmentService;
 import com.ayush.blog.appointment.service.ConsultantService;
+import com.ayush.blog.appointment.service.RedisService;
 import com.ayush.blog.appointment.service.UserService;
-import com.ayush.blog.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,22 +19,23 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
-
 @RestController
 @RequestMapping("/appointments")
 public class AppointmentController {
     @Autowired
     private AppointmentService appointmentService;
+    @Autowired
+    private AppointmentRepo appointmentRepo;
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private RedisService redisService;
     @Autowired
     private NotificationProducer notificationProducer;
 
@@ -55,57 +55,11 @@ public class AppointmentController {
     private String redisPassword;
 
     private static final Logger logger = LoggerFactory.getLogger(AppointmentController.class);
-
-
     @PostMapping("/book")
     public ResponseEntity<String> bookAppointment(@RequestBody AppointmentRequest appointmentRequest) {
-        logger.info("Received appointment request: {}", appointmentRequest);
-
-        try {
-            // Extract date and time from the request
-            LocalDate requestDate = appointmentRequest.getDate();
-            LocalTime requestSlotTime = appointmentRequest.getSlotTime();
-            logger.info("Requested date: {}, slot time: {}", requestDate, requestSlotTime);
-
-            // Fetch available slots from Redis using the date as the key
-            String redisKey = "slots:" + requestDate;
-            logger.info("Fetching available slots for dateKey: {}", redisKey);
-
-            Set<String> availableSlots = appointmentService.getAvailableSlotsFromRedis(redisKey);
-            if (availableSlots == null || !availableSlots.contains(requestSlotTime.toString())) {
-                logger.warn("Slot with start time {} not found in Redis.", requestSlotTime);
-                return ResponseEntity.badRequest().body("Slot not found");
-            }
-
-            // Fetch the corresponding slot from MySQL
-            Slot slot = slotRepo.findByStartTime(LocalDateTime.of(requestDate, requestSlotTime))
-                    .orElseThrow(() -> new IllegalArgumentException("Slot not found in MySQL"));
-
-            // Check if the slot is already booked
-            boolean isSlotBooked = appointmentService.existsBySlotStartTime(LocalDateTime.of(requestDate, requestSlotTime));
-            if (isSlotBooked) {
-                logger.warn("Requested slotStartTime {} is already booked.", requestSlotTime);
-                return ResponseEntity.badRequest().body("Requested slot is already booked");
-            }
-
-            // Fetch the user and consultant
-            User user = userService.findById(appointmentRequest.getUserId())
-                    .orElseThrow(() -> new IllegalArgumentException("User not found"));
-
-            Consultant consultant = consultantService.findById(appointmentRequest.getConsultantId())
-                    .orElseThrow(() -> new IllegalArgumentException("Consultant not found"));
-
-            // Book the appointment using the slot fetched from MySQL
-            appointmentService.bookAppointment(user, consultant, slot);
-
-            return ResponseEntity.ok("Appointment booked successfully!");
-
-        } catch (Exception e) {
-            logger.error("Error while booking appointment: ", e);
-            return ResponseEntity.status(500).body("Internal server error");
-        }
+        Appointment appointment = appointmentService.bookAppointment(appointmentRequest);
+        return ResponseEntity.ok("Appointment booked successfully with Consultant ID: " + appointment.getConsultant().getId());
     }
-
 
     @GetMapping("/upcoming/{userId}")
     public ResponseEntity<List<AppointmentDTO>> getUpcomingAppointments(@PathVariable Long userId) {

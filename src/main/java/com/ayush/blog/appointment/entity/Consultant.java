@@ -10,18 +10,16 @@ import java.util.List;
 import java.util.Set;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "consultants")
-public class Consultant implements Serializable {
-
+public class Consultant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
 
-    @ManyToMany(mappedBy = "availableConsultants")
-    private List<Slot> availableSlots = new ArrayList<>(); // Track which slots the consultant is available for
+//    @ManyToMany(mappedBy = "availableConsultants")
+//    private List<Slot> availableSlots = new ArrayList<>();
 }

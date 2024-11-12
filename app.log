@@ -1,0 +1,1159 @@
+2024-11-13T00:00:10.216+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Revoke previously assigned partitions emailNotification-0
+2024-11-13T00:00:10.221+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions revoked: [emailNotification-0]
+2024-11-13T00:00:10.222+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Member consumer-my-group-1-6a3c0b5f-29b6-4209-b236-5fc5b3ba8b5c sending LeaveGroup request to coordinator localhost:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-13T00:00:10.233+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:00:10.233+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:00:10.233+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-11-13T00:00:10.235+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:00:10.235+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:00:10.630+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-13T00:00:10.630+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-13T00:00:10.630+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-13T00:00:10.630+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-13T00:00:10.637+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-my-group-1 unregistered
+2024-11-13T00:00:10.638+05:30  INFO 15760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: Consumer stopped
+2024-11-13T00:00:10.810+05:30  INFO 15760 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:00:10.814+05:30  INFO 15760 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-13T00:00:10.821+05:30  INFO 15760 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-13T00:00:40.114+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Starting SpringBootBlogAppApplication using Java 19.0.2 with PID 16284 (C:\springboot\spring-boot-blog-app\target\classes started by ayush in C:\springboot\spring-boot-blog-app)
+2024-11-13T00:00:40.116+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T00:00:40.182+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-13T00:00:40.182+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-13T00:00:41.433+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:00:41.435+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T00:00:41.630+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185 ms. Found 9 JPA repository interfaces.
+2024-11-13T00:00:41.658+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:00:41.660+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-13T00:00:41.683+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.AppointmentRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.683+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.ConsultantRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.683+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.SlotRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.684+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.684+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.685+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.FileDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.686+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.686+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.686+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:00:41.687+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-11-13T00:00:42.649+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-13T00:00:42.668+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T00:00:42.668+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-13T00:00:42.729+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T00:00:42.729+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2547 ms
+2024-11-13T00:00:42.914+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-13T00:00:42.976+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-13T00:00:43.017+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-13T00:00:43.344+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T00:00:43.368+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-13T00:00:43.638+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6786e612
+2024-11-13T00:00:43.640+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-13T00:00:43.688+05:30  WARN 16284 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-13T00:00:43.689+05:30  WARN 16284 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-13T00:00:44.768+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-13T00:00:45.038+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:00:45.522+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-13T00:00:46.368+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-13T00:00:46.624+05:30  WARN 16284 --- [spring-boot-blog-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T00:00:47.457+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T00:00:47.526+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-13T00:00:47.577+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-11-13T00:00:47.621+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:00:47.722+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:00:47.722+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:00:47.722+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731436247720
+2024-11-13T00:00:47.728+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): emailNotification
+2024-11-13T00:00:47.756+05:30  INFO 16284 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Started SpringBootBlogAppApplication in 8.144 seconds (process running for 8.737)
+2024-11-13T00:00:48.232+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:00:48.233+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2024-11-13T00:00:48.238+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:00:48.250+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-b5d0e495-2d4e-45ee-86ec-bb39859fd1ee
+2024-11-13T00:00:48.251+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:00:51.259+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=149, memberId='consumer-my-group-1-b5d0e495-2d4e-45ee-86ec-bb39859fd1ee', protocol='range'}
+2024-11-13T00:00:51.265+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 149: {consumer-my-group-1-b5d0e495-2d4e-45ee-86ec-bb39859fd1ee=Assignment(partitions=[emailNotification-0])}
+2024-11-13T00:00:51.272+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=149, memberId='consumer-my-group-1-b5d0e495-2d4e-45ee-86ec-bb39859fd1ee', protocol='range'}
+2024-11-13T00:00:51.273+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[emailNotification-0])
+2024-11-13T00:00:51.275+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: emailNotification-0
+2024-11-13T00:00:51.283+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition emailNotification-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2024-11-13T00:00:51.296+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions assigned: [emailNotification-0]
+2024-11-13T00:00:58.427+05:30  INFO 16284 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-13T00:00:58.427+05:30  INFO 16284 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-13T00:00:58.428+05:30  INFO 16284 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-13T00:00:58.636+05:30  WARN 16284 --- [spring-boot-blog-app] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No consultants available in this slot.]
+2024-11-13T00:01:05.651+05:30  WARN 16284 --- [spring-boot-blog-app] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No consultants available in this slot.]
+2024-11-13T00:09:20.863+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Revoke previously assigned partitions emailNotification-0
+2024-11-13T00:09:20.864+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions revoked: [emailNotification-0]
+2024-11-13T00:09:20.864+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Member consumer-my-group-1-b5d0e495-2d4e-45ee-86ec-bb39859fd1ee sending LeaveGroup request to coordinator localhost:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-13T00:09:20.865+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:09:20.865+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:09:20.865+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-11-13T00:09:20.867+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:09:20.867+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:09:21.021+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-13T00:09:21.021+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-13T00:09:21.021+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-13T00:09:21.021+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-13T00:09:21.029+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-my-group-1 unregistered
+2024-11-13T00:09:21.029+05:30  INFO 16284 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: Consumer stopped
+2024-11-13T00:09:21.199+05:30  INFO 16284 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:09:21.203+05:30  INFO 16284 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-13T00:09:21.211+05:30  INFO 16284 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-13T00:09:49.886+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Starting SpringBootBlogAppApplication using Java 19.0.2 with PID 16312 (C:\springboot\spring-boot-blog-app\target\classes started by ayush in C:\springboot\spring-boot-blog-app)
+2024-11-13T00:09:49.888+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T00:09:49.957+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-13T00:09:49.958+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-13T00:09:51.196+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:09:51.197+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T00:09:51.384+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 9 JPA repository interfaces.
+2024-11-13T00:09:51.409+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:09:51.411+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-13T00:09:51.433+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.AppointmentRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.433+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.ConsultantRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.434+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.SlotRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.434+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.434+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.434+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.FileDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.434+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.435+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.435+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:09:51.435+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-11-13T00:09:52.346+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-13T00:09:52.361+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T00:09:52.361+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-13T00:09:52.432+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T00:09:52.432+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2474 ms
+2024-11-13T00:09:52.614+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-13T00:09:52.670+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-13T00:09:52.712+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-13T00:09:53.037+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T00:09:53.074+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-13T00:09:53.361+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2338eccb
+2024-11-13T00:09:53.363+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-13T00:09:53.410+05:30  WARN 16312 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-13T00:09:53.411+05:30  WARN 16312 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-13T00:09:54.446+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-13T00:09:54.697+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:09:55.115+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-13T00:09:55.894+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-13T00:09:56.134+05:30  WARN 16312 --- [spring-boot-blog-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T00:09:56.991+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T00:09:57.054+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-13T00:09:57.091+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-11-13T00:09:57.133+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:09:57.212+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:09:57.212+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:09:57.212+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731436797210
+2024-11-13T00:09:57.217+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): emailNotification
+2024-11-13T00:09:57.238+05:30  INFO 16312 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Started SpringBootBlogAppApplication in 7.799 seconds (process running for 8.525)
+2024-11-13T00:09:57.729+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:09:57.730+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2024-11-13T00:09:57.736+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:09:57.752+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-8d1ea7ad-2e3b-44f3-a13c-b3aa52becc94
+2024-11-13T00:09:57.752+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:10:00.759+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=151, memberId='consumer-my-group-1-8d1ea7ad-2e3b-44f3-a13c-b3aa52becc94', protocol='range'}
+2024-11-13T00:10:00.765+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 151: {consumer-my-group-1-8d1ea7ad-2e3b-44f3-a13c-b3aa52becc94=Assignment(partitions=[emailNotification-0])}
+2024-11-13T00:10:00.770+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=151, memberId='consumer-my-group-1-8d1ea7ad-2e3b-44f3-a13c-b3aa52becc94', protocol='range'}
+2024-11-13T00:10:00.770+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[emailNotification-0])
+2024-11-13T00:10:00.771+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: emailNotification-0
+2024-11-13T00:10:00.780+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition emailNotification-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2024-11-13T00:10:00.792+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions assigned: [emailNotification-0]
+2024-11-13T00:10:06.800+05:30  INFO 16312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-13T00:10:06.801+05:30  INFO 16312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-13T00:10:06.802+05:30  INFO 16312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-13T00:10:07.040+05:30  WARN 16312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No consultants available in this slot.]
+2024-11-13T00:10:50.516+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Revoke previously assigned partitions emailNotification-0
+2024-11-13T00:10:50.517+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions revoked: [emailNotification-0]
+2024-11-13T00:10:50.517+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Member consumer-my-group-1-8d1ea7ad-2e3b-44f3-a13c-b3aa52becc94 sending LeaveGroup request to coordinator localhost:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-13T00:10:50.518+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:10:50.518+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:10:50.518+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-11-13T00:10:50.519+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:10:50.520+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:10:50.618+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-13T00:10:50.618+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-13T00:10:50.618+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-13T00:10:50.619+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-13T00:10:50.625+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-my-group-1 unregistered
+2024-11-13T00:10:50.625+05:30  INFO 16312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: Consumer stopped
+2024-11-13T00:10:50.806+05:30  INFO 16312 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:10:50.809+05:30  INFO 16312 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-13T00:10:50.816+05:30  INFO 16312 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-13T00:10:56.532+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Starting SpringBootBlogAppApplication using Java 19.0.2 with PID 13020 (C:\springboot\spring-boot-blog-app\target\classes started by ayush in C:\springboot\spring-boot-blog-app)
+2024-11-13T00:10:56.535+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T00:10:56.597+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-13T00:10:56.597+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-13T00:10:57.830+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:10:57.832+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T00:10:58.014+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 9 JPA repository interfaces.
+2024-11-13T00:10:58.034+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:10:58.036+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-13T00:10:58.058+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.AppointmentRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.058+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.ConsultantRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.058+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.SlotRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.059+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.059+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.059+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.FileDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.059+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.060+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.060+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:10:58.061+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-13T00:10:59.022+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-13T00:10:59.040+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T00:10:59.040+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-13T00:10:59.098+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T00:10:59.099+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2501 ms
+2024-11-13T00:10:59.281+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-13T00:10:59.349+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-13T00:10:59.394+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-13T00:10:59.759+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T00:10:59.792+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-13T00:11:00.090+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2338eccb
+2024-11-13T00:11:00.092+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-13T00:11:00.151+05:30  WARN 13020 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-13T00:11:00.153+05:30  WARN 13020 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-13T00:11:01.235+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-13T00:11:01.490+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:11:01.908+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-13T00:11:02.764+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-13T00:11:03.005+05:30  WARN 13020 --- [spring-boot-blog-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T00:11:03.908+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T00:11:03.977+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-13T00:11:04.013+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-11-13T00:11:04.063+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:11:04.151+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:11:04.151+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:11:04.151+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731436864149
+2024-11-13T00:11:04.154+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): emailNotification
+2024-11-13T00:11:04.174+05:30  INFO 13020 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Started SpringBootBlogAppApplication in 8.111 seconds (process running for 8.785)
+2024-11-13T00:11:04.624+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:11:04.624+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2024-11-13T00:11:04.630+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:11:04.643+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-163273fe-1eea-4578-b867-464a12dd117a
+2024-11-13T00:11:04.643+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:11:07.619+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=153, memberId='consumer-my-group-1-163273fe-1eea-4578-b867-464a12dd117a', protocol='range'}
+2024-11-13T00:11:07.625+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 153: {consumer-my-group-1-163273fe-1eea-4578-b867-464a12dd117a=Assignment(partitions=[emailNotification-0])}
+2024-11-13T00:11:07.631+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=153, memberId='consumer-my-group-1-163273fe-1eea-4578-b867-464a12dd117a', protocol='range'}
+2024-11-13T00:11:07.631+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[emailNotification-0])
+2024-11-13T00:11:07.633+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: emailNotification-0
+2024-11-13T00:11:07.642+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition emailNotification-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2024-11-13T00:11:07.653+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions assigned: [emailNotification-0]
+2024-11-13T00:11:13.673+05:30  INFO 13020 --- [spring-boot-blog-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-13T00:11:13.673+05:30  INFO 13020 --- [spring-boot-blog-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-13T00:11:13.674+05:30  INFO 13020 --- [spring-boot-blog-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-13T00:11:13.888+05:30  WARN 13020 --- [spring-boot-blog-app] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No consultants available in this slot.]
+2024-11-13T00:12:41.198+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Revoke previously assigned partitions emailNotification-0
+2024-11-13T00:12:41.199+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions revoked: [emailNotification-0]
+2024-11-13T00:12:41.199+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Member consumer-my-group-1-163273fe-1eea-4578-b867-464a12dd117a sending LeaveGroup request to coordinator localhost:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-13T00:12:41.200+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:12:41.200+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:12:41.200+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-11-13T00:12:41.202+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:12:41.202+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:12:41.302+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-13T00:12:41.302+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-13T00:12:41.302+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-13T00:12:41.302+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-13T00:12:41.308+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-my-group-1 unregistered
+2024-11-13T00:12:41.309+05:30  INFO 13020 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: Consumer stopped
+2024-11-13T00:12:41.486+05:30  INFO 13020 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:12:41.490+05:30  INFO 13020 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-13T00:12:41.497+05:30  INFO 13020 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-13T00:12:46.701+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Starting SpringBootBlogAppApplication using Java 19.0.2 with PID 14312 (C:\springboot\spring-boot-blog-app\target\classes started by ayush in C:\springboot\spring-boot-blog-app)
+2024-11-13T00:12:46.703+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T00:12:46.773+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-13T00:12:46.773+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-13T00:12:48.024+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:12:48.026+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T00:12:48.201+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 9 JPA repository interfaces.
+2024-11-13T00:12:48.220+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:12:48.221+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-13T00:12:48.240+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.AppointmentRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.240+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.ConsultantRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.241+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.SlotRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.241+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.241+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.241+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.FileDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.242+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.242+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.242+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:12:48.242+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-11-13T00:12:49.168+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-13T00:12:49.184+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T00:12:49.184+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-13T00:12:49.252+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T00:12:49.252+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2479 ms
+2024-11-13T00:12:49.451+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-13T00:12:49.518+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-13T00:12:49.563+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-13T00:12:49.900+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T00:12:49.935+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-13T00:12:50.200+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30b3e0d5
+2024-11-13T00:12:50.203+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-13T00:12:50.243+05:30  WARN 14312 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-13T00:12:50.244+05:30  WARN 14312 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-13T00:12:51.320+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-13T00:12:51.595+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:12:52.016+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-13T00:12:52.842+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-13T00:12:53.094+05:30  WARN 14312 --- [spring-boot-blog-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T00:12:53.978+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T00:12:54.039+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-13T00:12:54.076+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-11-13T00:12:54.115+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:12:54.193+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:12:54.193+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:12:54.193+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731436974191
+2024-11-13T00:12:54.197+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): emailNotification
+2024-11-13T00:12:54.216+05:30  INFO 14312 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Started SpringBootBlogAppApplication in 8.028 seconds (process running for 8.711)
+2024-11-13T00:12:54.632+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:12:54.633+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2024-11-13T00:12:54.639+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:12:54.653+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-7947e869-b2e6-496e-b58b-36f15d5c94cd
+2024-11-13T00:12:54.654+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:12:57.648+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=155, memberId='consumer-my-group-1-7947e869-b2e6-496e-b58b-36f15d5c94cd', protocol='range'}
+2024-11-13T00:12:57.653+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 155: {consumer-my-group-1-7947e869-b2e6-496e-b58b-36f15d5c94cd=Assignment(partitions=[emailNotification-0])}
+2024-11-13T00:12:57.659+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=155, memberId='consumer-my-group-1-7947e869-b2e6-496e-b58b-36f15d5c94cd', protocol='range'}
+2024-11-13T00:12:57.659+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[emailNotification-0])
+2024-11-13T00:12:57.661+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: emailNotification-0
+2024-11-13T00:12:57.670+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition emailNotification-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2024-11-13T00:12:57.683+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions assigned: [emailNotification-0]
+2024-11-13T00:13:03.246+05:30  INFO 14312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-13T00:13:03.247+05:30  INFO 14312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-13T00:13:03.248+05:30  INFO 14312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-13T00:13:03.476+05:30  WARN 14312 --- [spring-boot-blog-app] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No consultants available in this slot.]
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Revoke previously assigned partitions emailNotification-0
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions revoked: [emailNotification-0]
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Member consumer-my-group-1-7947e869-b2e6-496e-b58b-36f15d5c94cd sending LeaveGroup request to coordinator localhost:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:20:09.900+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:20:09.990+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-13T00:20:09.990+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-13T00:20:09.990+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-13T00:20:09.990+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-13T00:20:09.999+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-my-group-1 unregistered
+2024-11-13T00:20:10.000+05:30  INFO 14312 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: Consumer stopped
+2024-11-13T00:20:10.168+05:30  INFO 14312 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:20:10.168+05:30  INFO 14312 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-13T00:20:10.168+05:30  INFO 14312 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-13T00:20:15.253+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Starting SpringBootBlogAppApplication using Java 19.0.2 with PID 18760 (C:\springboot\spring-boot-blog-app\target\classes started by ayush in C:\springboot\spring-boot-blog-app)
+2024-11-13T00:20:15.255+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T00:20:15.326+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-13T00:20:15.326+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-13T00:20:16.571+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:20:16.572+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T00:20:16.747+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 9 JPA repository interfaces.
+2024-11-13T00:20:16.767+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:20:16.768+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-13T00:20:16.788+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.AppointmentRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.789+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.ConsultantRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.789+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.SlotRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.789+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.790+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.790+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.FileDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.790+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.791+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.791+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:20:16.792+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-11-13T00:20:17.766+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-13T00:20:17.789+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T00:20:17.789+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-13T00:20:17.851+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T00:20:17.852+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2524 ms
+2024-11-13T00:20:18.051+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-13T00:20:18.118+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-13T00:20:18.166+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-13T00:20:18.501+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T00:20:18.535+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-13T00:20:18.818+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d6c2f5b
+2024-11-13T00:20:18.819+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-13T00:20:18.862+05:30  WARN 18760 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-13T00:20:18.863+05:30  WARN 18760 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-13T00:20:19.952+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-13T00:20:20.214+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:20:20.645+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-13T00:20:21.497+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-13T00:20:21.736+05:30  WARN 18760 --- [spring-boot-blog-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T00:20:22.589+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T00:20:22.653+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-13T00:20:22.686+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-11-13T00:20:22.729+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:20:22.802+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:20:22.802+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:20:22.802+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731437422800
+2024-11-13T00:20:22.814+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): emailNotification
+2024-11-13T00:20:22.834+05:30  INFO 18760 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Started SpringBootBlogAppApplication in 8.041 seconds (process running for 8.636)
+2024-11-13T00:20:23.283+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:20:23.284+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2024-11-13T00:20:23.289+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:20:23.300+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-78431ec6-8d3e-4cf0-b2e3-ad6a90725260
+2024-11-13T00:20:23.300+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:20:26.309+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=157, memberId='consumer-my-group-1-78431ec6-8d3e-4cf0-b2e3-ad6a90725260', protocol='range'}
+2024-11-13T00:20:26.315+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 157: {consumer-my-group-1-78431ec6-8d3e-4cf0-b2e3-ad6a90725260=Assignment(partitions=[emailNotification-0])}
+2024-11-13T00:20:26.320+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=157, memberId='consumer-my-group-1-78431ec6-8d3e-4cf0-b2e3-ad6a90725260', protocol='range'}
+2024-11-13T00:20:26.321+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[emailNotification-0])
+2024-11-13T00:20:26.323+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: emailNotification-0
+2024-11-13T00:20:26.332+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition emailNotification-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2024-11-13T00:20:26.343+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions assigned: [emailNotification-0]
+2024-11-13T00:24:33.464+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Revoke previously assigned partitions emailNotification-0
+2024-11-13T00:24:33.464+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions revoked: [emailNotification-0]
+2024-11-13T00:24:33.464+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Member consumer-my-group-1-78431ec6-8d3e-4cf0-b2e3-ad6a90725260 sending LeaveGroup request to coordinator localhost:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-11-13T00:24:33.464+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:24:33.464+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:24:33.464+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Unsubscribed all topics or patterns and assigned partitions
+2024-11-13T00:24:33.479+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-11-13T00:24:33.479+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: consumer pro-actively leaving the group
+2024-11-13T00:24:33.802+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-11-13T00:24:33.803+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-11-13T00:24:33.803+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-11-13T00:24:33.803+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-11-13T00:24:33.810+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-my-group-1 unregistered
+2024-11-13T00:24:33.810+05:30  INFO 18760 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: Consumer stopped
+2024-11-13T00:24:33.981+05:30  INFO 18760 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:24:33.984+05:30  INFO 18760 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-13T00:24:33.984+05:30  INFO 18760 --- [spring-boot-blog-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-13T00:35:00.345+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Starting SpringBootBlogAppApplication using Java 19.0.2 with PID 8972 (C:\springboot\spring-boot-blog-app\target\classes started by ayush in C:\springboot\spring-boot-blog-app)
+2024-11-13T00:35:00.349+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T00:35:00.423+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-13T00:35:00.423+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-13T00:35:01.734+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:35:01.735+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T00:35:01.912+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 9 JPA repository interfaces.
+2024-11-13T00:35:01.931+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-13T00:35:01.932+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-13T00:35:01.951+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.AppointmentRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.952+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.ConsultantRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.952+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.appointment.repository.SlotRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.953+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.953+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.953+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.FileDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.953+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.954+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.954+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ayush.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-13T00:35:01.954+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-11-13T00:35:02.974+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-13T00:35:02.989+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T00:35:02.990+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-13T00:35:03.054+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T00:35:03.055+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2631 ms
+2024-11-13T00:35:03.241+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-13T00:35:03.300+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-13T00:35:03.344+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-13T00:35:03.665+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T00:35:03.691+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-13T00:35:03.971+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cf56a18
+2024-11-13T00:35:03.973+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-13T00:35:04.015+05:30  WARN 8972 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-13T00:35:04.016+05:30  WARN 8972 --- [spring-boot-blog-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-13T00:35:05.041+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-13T00:35:05.296+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T00:35:05.697+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-13T00:35:06.415+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-13T00:35:06.646+05:30  WARN 8972 --- [spring-boot-blog-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T00:35:07.516+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T00:35:07.579+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-13T00:35:07.613+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-11-13T00:35:07.650+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:35:07.723+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:35:07.723+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:35:07.723+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731438307722
+2024-11-13T00:35:07.728+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): emailNotification
+2024-11-13T00:35:07.748+05:30  INFO 8972 --- [spring-boot-blog-app] [restartedMain] c.a.blog.SpringBootBlogAppApplication    : Started SpringBootBlogAppApplication in 7.989 seconds (process running for 8.755)
+2024-11-13T00:35:08.237+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:35:08.238+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+2024-11-13T00:35:08.244+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:35:08.258+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-5deb5dfa-de03-46b4-b66d-3f47f1bda3d8
+2024-11-13T00:35:08.258+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2024-11-13T00:35:11.261+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=159, memberId='consumer-my-group-1-5deb5dfa-de03-46b4-b66d-3f47f1bda3d8', protocol='range'}
+2024-11-13T00:35:11.266+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 159: {consumer-my-group-1-5deb5dfa-de03-46b4-b66d-3f47f1bda3d8=Assignment(partitions=[emailNotification-0])}
+2024-11-13T00:35:11.271+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=159, memberId='consumer-my-group-1-5deb5dfa-de03-46b4-b66d-3f47f1bda3d8', protocol='range'}
+2024-11-13T00:35:11.272+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[emailNotification-0])
+2024-11-13T00:35:11.274+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: emailNotification-0
+2024-11-13T00:35:11.282+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition emailNotification-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+2024-11-13T00:35:11.294+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : my-group: partitions assigned: [emailNotification-0]
+2024-11-13T00:35:16.970+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-13T00:35:16.970+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-13T00:35:16.971+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-13T00:35:27.168+05:30  WARN 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No consultants available in this slot.]
+2024-11-13T00:43:27.877+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-6] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = spring-boot-blog-app-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 5000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-11-13T00:43:27.892+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-6] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-13T00:43:27.892+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-6] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=spring-boot-blog-app-producer-1] Instantiated an idempotent producer.
+2024-11-13T00:43:27.924+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-13T00:43:27.924+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-13T00:43:27.924+05:30  INFO 8972 --- [spring-boot-blog-app] [http-nio-8080-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731438807924
+2024-11-13T00:43:27.934+05:30  INFO 8972 --- [spring-boot-blog-app] [kafka-producer-network-thread | spring-boot-blog-app-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=spring-boot-blog-app-producer-1] Cluster ID: bZTONHO5RYe9AqP12aEGAw
+2024-11-13T00:43:28.240+05:30  INFO 8972 --- [spring-boot-blog-app] [kafka-producer-network-thread | spring-boot-blog-app-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=spring-boot-blog-app-producer-1] ProducerId set to 1000 with epoch 0
+2024-11-13T00:44:08.689+05:30  INFO 8972 --- [spring-boot-blog-app] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
