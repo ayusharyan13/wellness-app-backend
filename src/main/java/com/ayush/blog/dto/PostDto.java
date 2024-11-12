@@ -37,6 +37,7 @@ public class PostDto {
     )
     @NotEmpty
     private String content;
+    private String imageUrl;
 
     @Schema(
             title = "Blog post comments"

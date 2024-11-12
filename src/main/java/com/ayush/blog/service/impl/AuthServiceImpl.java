@@ -19,6 +19,8 @@ import org.springframework.stereotype.Service;
 import java.util.HashSet;
 import java.util.Set;
 
+import static com.ayush.blog.config.SecurityConfig.passwordEncoder;
+
 
 @Service
 public class AuthServiceImpl implements AuthService {
@@ -61,23 +63,32 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public String register(RegisterDto registerDto) {
-        //check if user exists in db
+        // Check if user exists in db
         if (userRepository.existsByUsername(registerDto.getUsername())) {
-            throw new BlogApiException(HttpStatus.BAD_REQUEST, "username already exists !!");
+            throw new BlogApiException(HttpStatus.BAD_REQUEST, "Username already exists!");
         }
 
         if (userRepository.existsByEmail(registerDto.getEmail())) {
-            throw new BlogApiException(HttpStatus.BAD_REQUEST, "user email already exists !!");
+            throw new BlogApiException(HttpStatus.BAD_REQUEST, "User email already exists!");
         }
 
-        User user =  mapToEntity(registerDto);
+        // Map RegisterDto to User entity
+        User user = mapToEntity(registerDto);
+
+        // Encode the password before saving
+        String encodedPassword = passwordEncoder().encode(registerDto.getPassword());
+        user.setPassword(encodedPassword); // Assuming User entity has a setPassword method
+
         Set<Role> roles = new HashSet<>();
-        Role userRole = roleRepository.findByName("ROLE_USER").get();
+        Role userRole = roleRepository.findByName("ROLE_USER").orElseThrow(() ->
+                new BlogApiException(HttpStatus.BAD_REQUEST, "Role not found!"));
         roles.add(userRole);
         user.setRoles(roles);
+
         userRepository.save(user);
-        return "User registered successfully !!!";
+        return "User registered successfully!";
     }
+
 
     //Model mapper
     private User mapToEntity(RegisterDto registerDto) {

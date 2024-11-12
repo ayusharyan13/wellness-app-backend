@@ -23,6 +23,10 @@ public class Post {
     @Column(name = "content",nullable = false)
     private String content;
 
+    // Add image URL
+    @Column(name = "image_url")
+    private String imageUrl;
+
     @OneToMany(mappedBy = "post",cascade = CascadeType.ALL,orphanRemoval = true)
     private Set<Comment> comments = new HashSet<>();
 

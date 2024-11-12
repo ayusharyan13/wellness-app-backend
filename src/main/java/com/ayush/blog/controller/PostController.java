@@ -14,6 +14,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 import java.util.List;
 
 @Tag(name = "CRUD API for Blog Posts" ,
@@ -41,9 +44,23 @@ public class PostController {
             name = "Bear Authentication"
     )
     @PostMapping
-    public ResponseEntity<PostDto> createPost(@Valid @RequestBody PostDto postDto){
-        return new ResponseEntity<>(postService.createPost(postDto), HttpStatus.CREATED);
+    public ResponseEntity<PostDto> createPost(
+            @ModelAttribute PostDto postDto,
+            @RequestParam("image") MultipartFile image) throws IOException, IOException {
+
+        PostDto createdPost = postService.createPost(postDto, image);
+        return new ResponseEntity<>(createdPost, HttpStatus.CREATED);
     }
+
+
+
+
+
+//    @PostMapping
+//    public ResponseEntity<PostDto> createPost(@Valid @RequestBody PostDto postDto){
+//
+//        return new ResponseEntity<>(postService.createPost(postDto), HttpStatus.CREATED);
+//    }
 
 
     @Operation(

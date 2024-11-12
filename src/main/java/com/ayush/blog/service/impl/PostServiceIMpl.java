@@ -6,6 +6,7 @@ import com.ayush.blog.entity.Post;
 import com.ayush.blog.repository.CategoryRepository;
 import com.ayush.blog.repository.PostRepository;
 import com.ayush.blog.exception.ResourceNotFoundException;
+import com.ayush.blog.service.CloudinaryService;
 import com.ayush.blog.service.PostService;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.Banner;
@@ -13,7 +14,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,27 +27,33 @@ public class PostServiceIMpl implements PostService {
     private PostRepository postRepository;
     private ModelMapper mapper;
     private CategoryRepository categoryRepository;
+    private CloudinaryService cloudinaryService;
 
     // constructor based dependency injection
-    public PostServiceIMpl(PostRepository postRepository, ModelMapper mapper, CategoryRepository categoryRepository) {
+    public PostServiceIMpl(PostRepository postRepository, ModelMapper mapper, CategoryRepository categoryRepository, CloudinaryService cloudinaryService) {
         this.postRepository = postRepository;
         this.mapper =  mapper;
         this.categoryRepository = categoryRepository;
+        this.cloudinaryService = cloudinaryService;
     }
 
     @Override
-    public PostDto createPost(PostDto postDto) {
+    public PostDto createPost(PostDto postDto,  MultipartFile imageFile) throws IOException {
         // get the category from db and add it to post:
         Category category = categoryRepository.findById(postDto.getCategoryId()).orElseThrow(
                 ()-> new ResourceNotFoundException("category", "id", postDto.getCategoryId())
         );
 
 
+        // Upload image and set URL
+        String imageUrl = cloudinaryService.uploadFile(imageFile);
         Post post = mapToEntity(postDto);
+
         post.setCategory(category);
-        Post newPost = postRepository.save(post);
+        post.setImageUrl(imageUrl);
+        Post savedPost = postRepository.save(post);
         // convert newPost entity to postDto
-        PostDto postResponse = mapToDto(newPost);
+        PostDto postResponse = mapToDto(savedPost);
         return postResponse;
     }
 
